@@ -42,15 +42,65 @@ function substituirPalavra(){
 substituirPalavra(frase);
 
 let palavra = prompt("Fala uma palavra ai")
-verificarTamanho(str){
-    if(str.lenght < 10){
-        console.log("Essa palavra tem menos de dez caracteres")
+function verificarTamanho(str){
+    if(str.length > 10){
+        console.log("Essa palavra tem mais de dez caracteres")
     }
     else{
-        console.log("Tem mais de dez")
+        console.log("Tem menos de dez letras")
     }
 }
-verificarSinal(palavra)
+verificarTamanho(palavra);
 
+let frutas = ["banana", "pessego", "melancia", "mamao", "uva"]
+console.log(frutas[2]);
 
+let nome = prompt("fala seu nome")
+let saudacao1 = prompt("fala algo aio")
+function saudacao(){
+    console.log(nome + " " + saudacao1)
+}
+saudacao()
 
+let nota = prompt("Fala a nota")
+function verificarAprovacao(str){
+    if(str >= 6){
+        console.log("aprovado")
+    }
+    else{
+        console.log("reprovado")
+    }
+}
+verificarAprovacao(nota)
+
+for(let num = 0; num <= 30; num++){
+    if(num % 2 === 0){
+        console.log(num)
+    }
+}
+
+let numeros = ["1", "2", "3", "4"]
+function somarArray(str){
+    let soma = 0;
+    let quantidade = str.length;
+    for(let x = 0; x >= quantidade; x++){
+        soma = soma + numeros[x];
+    }
+    console.log(soma)
+}
+somarArray(numeros)
+
+let vogal = prompt("Fala uma palavra ai");
+function contarVogais(str){
+    let vogais = 0;
+    let quantidade = str.length;
+    let separar = str.split[""];
+
+    for(let i = 0; i = quantidade; i++){
+        if(separar[i].includes("a","e","i","o","u")){
+            vogais = vogais + 1;
+        }
+    }
+    console.log(vogais);
+}
+contarVogais(vogal);
