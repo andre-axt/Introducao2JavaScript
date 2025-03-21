@@ -79,28 +79,42 @@ for(let num = 0; num <= 30; num++){
     }
 }
 
-let numeros = ["1", "2", "3", "4"]
-function somarArray(str){
-    let soma = 0;
-    let quantidade = str.length;
-    for(let x = 0; x >= quantidade; x++){
-        soma = soma + numeros[x];
-    }
-    console.log(soma)
-}
-somarArray(numeros)
+const palavracomvogal = prompt("digite uma palavra ai");
+function contarVogais(str) {
+    
+    const vogais = 'aeiouAEIOU';
+    let quantidade = 0;
 
-let vogal = prompt("Fala uma palavra ai");
-function contarVogais(str){
-    let vogais = 0;
-    let quantidade = str.length;
-    let separar = str.split[""];
-
-    for(let i = 0; i = quantidade; i++){
-        if(separar[i].includes("a","e","i","o","u")){
-            vogais = vogais + 1;
+    for (let i = 0; i < str.length; i++) {
+        if (vogais.includes(str[i])) {
+            quantidade++;
         }
     }
-    console.log(vogais);
+
+    return quantidade;
 }
-contarVogais(vogal);
+contarVogais(palavracomvogal)
+console.log(contarVogais(palavracomvogal));
+
+let number = prompt("Fala um número por gentileza")
+function dobrarNumero(){
+    let dobro = number * 2;
+    console.log(dobro)
+}
+dobrarNumero(number)
+
+let contador = 2;
+while(contador <= 20){
+    if(contador % 2 == 0){
+        console.log(contador)
+    }
+    contador++;
+}
+
+
+let palavra2 = prompt("Fala uma palavra")
+function capitalizar(str){
+    let transformar = str[0].toUpperCase() + str.substr(1);
+    console.log(transformar)
+}
+capitalizar(palavra2)
