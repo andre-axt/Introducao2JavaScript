@@ -96,6 +96,22 @@ function contarVogais(str) {
 contarVogais(palavracomvogal)
 console.log(contarVogais(palavracomvogal));
 
+let quantiarray = prompt("Quantos números você quer colocar na array")
+let arraysoma = 0;
+function somaArray(str){
+    let total = 0;
+    for( let i = 0; i >= str; i++){
+        arraysoma[i] = prompt("Fala um número")
+
+    }
+    for( let i = 0; i >= str; i++){
+        total = total + arraysoma[1];
+        
+    }
+    console.log(total)
+}
+somaArray(quantiarray)
+
 let number = prompt("Fala um número por gentileza")
 function dobrarNumero(){
     let dobro = number * 2;
@@ -118,3 +134,14 @@ function capitalizar(str){
     console.log(transformar)
 }
 capitalizar(palavra2)
+
+let ano = prompt("Fala um ano ai")
+function anoBissexto(ano){
+    if((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+anoBissexto(ano)
